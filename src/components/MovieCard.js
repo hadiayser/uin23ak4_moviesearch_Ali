@@ -27,7 +27,7 @@ export default function MovieCard() {
         <div id='test1'>
       <SearchResults searchValue={searchValue} setSearchValue={setSearchValue} />
       {movies.map((item, index) => (
-          <Main key={index} img={item.Poster} title={item.Title} year={item.Year} />
+          <Main key={index} img={item.Poster} alt="" title={item.Title} year={item.Year} />
           ))}
           </div>
   );

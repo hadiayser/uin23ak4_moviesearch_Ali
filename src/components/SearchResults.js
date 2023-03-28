@@ -1,9 +1,9 @@
-export default function SearchResults(props){
+export default function setsøkeResultat(søk){
     return(
-      <div className="searchInput">
-        <input
-          value={props.searchValue}
-          onChange={(event)=> props.setSearchValue(event.target.value)}
+      <div>
+        <input className="searchInput"
+          value={søk.searchValue}
+          onChange={(event)=> søk.setsøkeResultat(event.target.value)}
           placeholder="søk på film..."
         />
       </div>

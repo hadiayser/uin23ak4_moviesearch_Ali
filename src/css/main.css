@@ -12,8 +12,12 @@ main {
 #main-content {
   max-width: 350px;
   width: 100%;
-  background-color: whitesmoke;
   display: inline-block;
+  color: black;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-right: 2rem;
+  margin-left: 1rem;
 }
 #main-content img {
   max-width: 300px;
@@ -23,15 +27,22 @@ main {
 #id-content {
   width: 100%;
   max-width: 1200px;
-  background-color: whitesmoke;
+  background-color: white;
   margin: auto;
 }
 
 #pageTitle {
   width: 100%;
-  background-color: #B97D4B;
+  background-color: seagreen;
+  color: white;
   text-align: center;
   text-transform: capitalize;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 import placeholderImg from '../images/placeholderImg.webp';
 import React, { useState} from 'react';
-export default function Main({ title, img, year, sjanger, regissør, skuespillere, priser }) {
+export default function Main({ title, img, år, sjanger, regissør, skuespillere, priser }) {
     const [placeholderImage, setplaceholderImage] = useState(img);
     const placeholderImageError = () => {
       setplaceholderImage(placeholderImg);
@@ -8,7 +8,7 @@ export default function Main({ title, img, year, sjanger, regissør, skuespiller
     return (
       <article id="main-content">
         <img src={placeholderImage} onError={placeholderImageError} />
-        <p>Publisert i året: <b>{year}</b></p>
+        <p>Publisert i året: <b>{år}</b></p>
         <h2>{title}</h2>
         <p>Skuspillere: {skuespillere}</p>
         <p>Regissør: {regissør}</p>

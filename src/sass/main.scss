@@ -1,12 +1,14 @@
+@import "Colors";
 
 body{
-    background-color: steelblue;
+    background-color: $SteelBlue;
 }
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
+    background-color:whitesmoke;
   }
   #main-content{
     max-width: 350px;
@@ -17,6 +19,12 @@ main{
     margin-top: 50px;
     margin-right: 2rem;
     margin-left: 1rem;    
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // kilde til box shadow: https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5
+    padding-top: 2rem;
+    background-color: white;
+
     img{
         max-width: 300px;
         width: 100%;
@@ -27,16 +35,15 @@ main{
   #id-content{
     width: 100%;
     max-width: 1200px;
-    background-color:white;
     margin: auto;
+    
 }
 #pageTitle{
     width: 100%;
-    background-color: seagreen;
-    color: white;
+    background-color: $SeaGreen;
+    color: $White;
     text-align: center;
     text-transform: capitalize;
-    // color: #B97D4B;
 }
 .searchInput{
     width: 100%;
